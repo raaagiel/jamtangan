@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.6 on darwin)" generated="20220823 15:09:41.598" rpa="false" schemaversion="3">
+<suite id="s1" name="Jamtangan" source="/Users/Ragiel/Documents/Robot/jamtangan.robot">
+<test id="s1-t1" name="Jam Tangan" line="28">
+<kw name="Launch Browser">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220823 15:09:41.942" level="INFO">Opening browser 'chrome' to base url 'https://www.jamtangan.com/login'.</msg>
+<status status="PASS" starttime="20220823 15:09:41.941" endtime="20220823 15:09:46.712"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220823 15:09:46.713" endtime="20220823 15:09:47.854"/>
+</kw>
+<status status="PASS" starttime="20220823 15:09:41.941" endtime="20220823 15:09:47.854"/>
+</kw>
+<kw name="Login">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${EMAIL}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220823 15:09:47.855" endtime="20220823 15:09:47.967"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${EMAIL}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 15:09:47.969" level="INFO">Clicking element '//*[@id="app"]/div/div[2]/div/div/div[2]/div/div/form/div/fieldset/div/div/input'.</msg>
+<status status="PASS" starttime="20220823 15:09:47.968" endtime="20220823 15:09:48.038"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${EMAIL}</arg>
+<arg>tuncayios14@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220823 15:09:48.040" level="INFO">Typing text 'tuncayios14@gmail.com' into text field '//*[@id="app"]/div/div[2]/div/div/div[2]/div/div/form/div/fieldset/div/div/input'.</msg>
+<status status="PASS" starttime="20220823 15:09:48.039" endtime="20220823 15:09:48.443"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${PASSWORD}</arg>
+<arg>Enter@ja77</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220823 15:09:48.444" level="INFO">Typing text 'Enter@ja77' into text field '//*[@id="app"]/div/div[2]/div/div/div[2]/div/div/form/div/div/fieldset/div/div[1]/input'.</msg>
+<status status="PASS" starttime="20220823 15:09:48.443" endtime="20220823 15:09:48.813"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${MASUK}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220823 15:09:48.814" endtime="20220823 15:09:48.860"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${MASUK}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 15:09:48.861" level="INFO">Clicking element '//*[@id="app"]/div/div[2]/div/div/div[2]/div/div/form/button'.</msg>
+<status status="PASS" starttime="20220823 15:09:48.860" endtime="20220823 15:09:48.975"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${JAM}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220823 15:09:48.976" endtime="20220823 15:09:54.065"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${JAM}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 15:09:54.066" level="INFO">Clicking element '//*[@id="app"]/div/div[2]/div/div[4]/div[2]/div/div/div[1]/div/a/div/div/div[2]/div'.</msg>
+<status status="PASS" starttime="20220823 15:09:54.066" endtime="20220823 15:09:58.081"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${BELI_NOW}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220823 15:09:58.081" endtime="20220823 15:09:58.611"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BELI_NOW}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 15:09:58.612" level="INFO">Clicking element '//*[@id="app"]/div/div[2]/div/div[1]/div[3]/div[2]/div[2]/div[2]/button'.</msg>
+<status status="PASS" starttime="20220823 15:09:58.612" endtime="20220823 15:09:58.690"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${LANJUTKAN}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<msg timestamp="20220823 15:10:04.338" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-26.png"&gt;&lt;img src="selenium-screenshot-26.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220823 15:10:04.339" level="FAIL">Element '//*[@id="app"]/div/div[2]/div/div[2]/div[2]/div[3]/button' not visible after 5 seconds.</msg>
+<status status="FAIL" starttime="20220823 15:09:58.690" endtime="20220823 15:10:04.344"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${LANJUTKAN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220823 15:10:04.345" endtime="20220823 15:10:04.345"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${TOGLE}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20220823 15:10:04.345" endtime="20220823 15:10:04.345"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${TOGLE}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220823 15:10:04.345" endtime="20220823 15:10:04.345"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${PILIH_V}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20220823 15:10:04.345" endtime="20220823 15:10:04.345"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${PILIH_V}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220823 15:10:04.345" endtime="20220823 15:10:04.346"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${PAKAI_V}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20220823 15:10:04.346" endtime="20220823 15:10:04.346"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${PAKAI_V}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220823 15:10:04.346" endtime="20220823 15:10:04.346"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${KURIR}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20220823 15:10:04.346" endtime="20220823 15:10:04.346"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${KURIR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220823 15:10:04.347" endtime="20220823 15:10:04.347"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${POPUP}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20220823 15:10:04.347" endtime="20220823 15:10:04.347"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${POPUP}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220823 15:10:04.347" endtime="20220823 15:10:04.347"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${JNE}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20220823 15:10:04.347" endtime="20220823 15:10:04.347"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${JNE}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220823 15:10:04.348" endtime="20220823 15:10:04.348"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${PILIH_PAYMENT}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20220823 15:10:04.348" endtime="20220823 15:10:04.348"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${PILIH_PAYMENT}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220823 15:10:04.349" endtime="20220823 15:10:04.349"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${BANK_TRANSFER}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20220823 15:10:04.349" endtime="20220823 15:10:04.349"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BANK_TRANSFER}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220823 15:10:04.349" endtime="20220823 15:10:04.349"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${MANDIRI}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20220823 15:10:04.349" endtime="20220823 15:10:04.349"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${MANDIRI}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220823 15:10:04.349" endtime="20220823 15:10:04.349"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${ORDER}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20220823 15:10:04.349" endtime="20220823 15:10:04.349"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${ORDER}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220823 15:10:04.349" endtime="20220823 15:10:04.349"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${CNFRM}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20220823 15:10:04.349" endtime="20220823 15:10:04.349"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${CNFRM}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220823 15:10:04.350" endtime="20220823 15:10:04.350"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${OKE}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20220823 15:10:04.350" endtime="20220823 15:10:04.350"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${BAYAR}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20220823 15:10:04.350" endtime="20220823 15:10:04.350"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BAYAR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220823 15:10:04.350" endtime="20220823 15:10:04.350"/>
+</kw>
+<status status="FAIL" starttime="20220823 15:09:47.854" endtime="20220823 15:10:04.350"/>
+</kw>
+<kw name="Close">
+<status status="NOT RUN" starttime="20220823 15:10:04.351" endtime="20220823 15:10:04.351"/>
+</kw>
+<status status="FAIL" starttime="20220823 15:09:41.939" endtime="20220823 15:10:04.352">Element '//*[@id="app"]/div/div[2]/div/div[2]/div[2]/div[3]/button' not visible after 5 seconds.</status>
+</test>
+<status status="FAIL" starttime="20220823 15:09:41.600" endtime="20220823 15:10:04.353"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Jamtangan">Jamtangan</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
